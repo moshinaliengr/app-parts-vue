@@ -1,0 +1,94 @@
+@import "dark.scss";
+@import "light.scss";
+// app global css in SCSS
+
+.patrick-hand-font {
+  font-family: 'Patrick Hand', cursive;
+}
+
+body {
+  // Sets main equal to DOM height - header & footer
+  main {
+    // height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+
+  // Removes underline color from link text and
+  a {
+    color: inherit;
+    text-decoration: unset;
+
+    // Sets color to primary & shows pointer on hover
+    &:hover {
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+
+  // Makes active route font color to primary
+  .q-router-link--active {
+    color: $primary;
+  }
+
+  form,
+  .q-card-section {
+    width: 100%;
+
+    .q-select,
+    .q-input {
+      margin: 0.5rem auto;
+      width: 100%;
+    }
+  }
+
+  // Ensures no background color on spinners
+  .q-inner-loading {
+    background: transparent;
+  }
+
+  .image-wrapper {
+    text-align: center;
+
+    img {
+      // margin: 0 auto;
+      width: 80%;
+    }
+  }
+
+  //
+  .half {
+    margin: 0 auto !important;
+    width: 49% !important;
+  }
+
+  // Forces the border on active inputs primary
+  .q-field__control:hover:before {
+    border-color: $primary !important;
+  }
+
+  // Removes padding from back button
+  button.back-button > span.q-btn__wrapper.col.row.q-anchor--skip {
+    padding: 0px !important;
+    // Decreases margin from icon element within
+    i {
+      margin-right: 6px;
+    }
+  }
+
+  // Adjusts height of pdfviewer to be total VH - the height of the toolbar
+  .q-pdfviewer {
+    height: calc(100vh - 46px);
+  }
+
+  // Forces dark theme on modal toolbar
+  .modal-toolbar {
+    background-color: #484848;
+    color: #fff;
+  }
+
+  // TODO: Move this to the component that it is used in
+  .component-image {
+    cursor: zoom-in;
+    width: 100%;
+  }
+}

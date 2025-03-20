@@ -1,0 +1,12 @@
+{
+  "name": "diesel-parts",
+  "version": "1.0.5",
+  "description": "A Diesel Laptops application",
+  "author": "mjackson <mjackson@diesellaptops.com>, jonathansloan <jonathanssloan@protonmail.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "2.5.0",
+    "@capacitor/cli": "^2.0.0",
+    "@capacitor/core": "^2.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+.body--light {
+  background-color: #F0F0F0;
+  .bottom-nav,
+  .q-page,
+  .q-footer,
+  .lightbox-inner {
+    background-color: #F0F0F0 !important;
+    color: #333333;
+  }
+
+  header.q-header {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background: #F0F0F0;
+  }
+}

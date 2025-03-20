@@ -1,0 +1,7 @@
+{
+  "appId": "com.diesellaptops.parts",
+  "appName": "Diesel Parts",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "www"
+}
